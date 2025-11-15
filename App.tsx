@@ -37,53 +37,7 @@ import { HiOutlineDocumentDuplicate, HiOutlineClipboard, HiOutlineTrash, HiPlus,
 import { CollectionData, Field, MongoDataType, GroupData, GroupColor, GroupColorStyles, ExplorerCollectionData, ExplorerItem } from './types';
 
 const initialNodes: Node<CollectionData | GroupData>[] = [
-  {
-    id: '1',
-    type: 'collectionNode',
-    position: { x: 100, y: 100 },
-    data: {
-      id: '1',
-      name: 'users',
-      icon: 'HiUserGroup',
-      fields: [
-        { id: 'f1-1', name: '_id', type: MongoDataType.ObjectId, required: true, isForeignKey: false, relatedCollection: null },
-        { id: 'f1-2', name: 'username', type: MongoDataType.String, required: true, isForeignKey: false, relatedCollection: null },
-        { id: 'f1-3', name: 'email', type: MongoDataType.String, required: true, isForeignKey: false, relatedCollection: null },
-        { id: 'f1-4', name: 'profile', type: MongoDataType.Object, required: false, isForeignKey: false, relatedCollection: null, childCollectionId: '3' },
-      ],
-    },
-  },
-  {
-    id: '2',
-    type: 'collectionNode',
-    position: { x: 550, y: 300 },
-    data: {
-      id: '2',
-      name: 'posts',
-      icon: 'HiDocumentText',
-      fields: [
-        { id: 'f2-1', name: '_id', type: MongoDataType.ObjectId, required: true, isForeignKey: false, relatedCollection: null },
-        { id: 'f2-2', name: 'title', type: MongoDataType.String, required: true, isForeignKey: false, relatedCollection: null },
-        { id: 'f2-3', name: 'content', type: MongoDataType.String, required: false, isForeignKey: false, relatedCollection: null },
-        { id: 'f2-4', name: 'author', type: MongoDataType.ObjectId, required: true, isForeignKey: true, relatedCollection: '1' },
-      ],
-    },
-  },
-  {
-    id: '3',
-    type: 'collectionNode',
-    position: { x: 550, y: 100 },
-    data: {
-      id: '3',
-      name: 'Profile',
-      icon: 'HiIdentification',
-      fields: [
-        { id: 'f3-1', name: 'bio', type: MongoDataType.String, required: false, isForeignKey: false, relatedCollection: null },
-        { id: 'f3-2', name: 'avatarUrl', type: MongoDataType.String, required: false, isForeignKey: false, relatedCollection: null },
-      ],
-      parentNode: '1',
-    },
-  },
+
 ];
 
 const initialEdges: Edge[] = [
