@@ -1,0 +1,5 @@
+{
+  "name": "schemator 84",
+  "description": "A powerful and intuitive web-based tool for visually designing MongoDB database schemas. Create collections, define fields with types, and map relationships using a clean, interactive diagram powered by React Flow.",
+  "requestFramePermissions": []
+}
