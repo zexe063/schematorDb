@@ -1400,7 +1400,7 @@ function AppContent() {
 
 
     try {
-        const ai = new GoogleGenAI({ apiKey: 'AIzaSyCJ2QiUevbnmbKtGondT8fASvs1k6zF51w' });
+        const ai = new GoogleGenAI({ apiKey: 'AIzaSyDQAxn9hXNutQQpjuRNgTF5BtUIzgCk6-E' });
        
 
           const schemaDefinition = {
